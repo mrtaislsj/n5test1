@@ -66,7 +66,7 @@
     .torii-header {
       background: linear-gradient(180deg, #991b1b 0%, #7f1d1d 100%);
       border-bottom: 4px solid #ca8a04;
-      padding: 10px 18px;
+      padding: 8px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -80,15 +80,15 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 800;
       letter-spacing: 2px;
       text-shadow: 1px 1px 2px #000;
     }
 
     .shrine-logo svg {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       fill: #fef08a;
     }
 
@@ -101,9 +101,9 @@
     .washi-badge {
       background: #450a0a;
       border: 1px solid #ca8a04;
-      padding: 5px 12px;
+      padding: 4px 12px;
       border-radius: 4px;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: #fef08a;
       font-weight: 700;
     }
@@ -113,11 +113,11 @@
       color: #38251e;
       border: none;
       border-radius: 4px;
-      padding: 6px 14px;
+      padding: 5px 12px;
       font-family: inherit;
       font-weight: 800;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       box-shadow: 0 2px 0 #78350f;
       transition: all 0.1s ease;
     }
@@ -128,7 +128,7 @@
     /* Main Stage Body */
     .stage-content {
       flex: 1;
-      padding: 16px 28px;
+      padding: 12px 24px;
       display: flex;
       flex-direction: column;
       position: relative;
@@ -142,13 +142,35 @@
       align-self: flex-start;
       background: #dc2626;
       color: #ffffff;
-      padding: 4px 14px;
-      font-size: 0.85rem;
+      padding: 3px 12px;
+      font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 1px;
       border-radius: 3px;
       box-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+      margin-bottom: 8px;
+    }
+
+    /* Ema / Shrine Illustration Viewport */
+    .shrine-illustration-box {
+      width: 100%;
+      height: 125px;
+      background: #fdfbf7;
+      border: 2px solid #b45309;
+      border-radius: 6px;
+      box-shadow: inset 0 0 10px rgba(180, 83, 9, 0.1), 0 3px 6px rgba(0,0,0,0.06);
       margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .shrine-illustration-box svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     /* Question Slate */
@@ -156,18 +178,18 @@
       background: #ffffff;
       border: 3px double #b45309;
       border-radius: 6px;
-      padding: 16px 22px;
-      font-size: 1.35rem;
+      padding: 12px 18px;
+      font-size: 1.22rem;
       font-weight: 800;
       color: #1c1917;
-      line-height: 1.6;
-      box-shadow: 0 4px 14px rgba(180, 83, 9, 0.08);
-      margin-bottom: 12px;
+      line-height: 1.5;
+      box-shadow: 0 4px 12px rgba(180, 83, 9, 0.08);
+      margin-bottom: 10px;
     }
 
     .question-num {
       color: #991b1b;
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       margin-right: 8px;
       font-family: 'Yuji Boku', serif;
     }
@@ -176,25 +198,25 @@
     .choices-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 10px;
+      gap: 10px;
+      margin-bottom: 8px;
     }
 
     .choice-tile {
       background: #faf4e8;
       border: 2px solid #d97706;
       border-radius: 6px;
-      padding: 14px 18px;
+      padding: 12px 16px;
       font-family: inherit;
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: #38251e;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-align: left;
-      box-shadow: 0 3px 0 #b45309, 0 4px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 3px 0 #b45309, 0 3px 6px rgba(0,0,0,0.05);
       transition: all 0.15s ease;
     }
 
@@ -210,15 +232,15 @@
     }
 
     .tile-index {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       border-radius: 50%;
       background: #991b1b;
       color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 800;
       flex-shrink: 0;
     }
@@ -241,7 +263,7 @@
       background: #ecfdf5 !important;
       border-color: #059669 !important;
       color: #065f46 !important;
-      box-shadow: 0 0 16px rgba(16, 185, 129, 0.4) !important;
+      box-shadow: 0 0 14px rgba(16, 185, 129, 0.4) !important;
     }
 
     .choice-tile.correct .tile-index {
@@ -254,11 +276,11 @@
       background: #fffbeb;
       border: 3px double #d97706;
       border-radius: 6px;
-      padding: 14px 20px;
+      padding: 12px 18px;
       box-shadow: 0 4px 12px rgba(217, 119, 6, 0.12);
       animation: unrollScroll 0.35s ease-out;
       margin-top: 4px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     @keyframes unrollScroll {
@@ -267,20 +289,20 @@
     }
 
     .scroll-title {
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 800;
       color: #991b1b;
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
       border-bottom: 1px dashed #ca8a04;
-      padding-bottom: 4px;
+      padding-bottom: 3px;
     }
 
     .scroll-body {
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 0.92rem;
+      line-height: 1.55;
       color: #451a03;
     }
 
@@ -293,10 +315,10 @@
     }
 
     .hint-alert {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 700;
       color: #b91c1c;
-      min-height: 24px;
+      min-height: 22px;
     }
 
     .btn-shrine-next {
@@ -304,9 +326,9 @@
       color: #ffffff;
       border: 2px solid #ca8a04;
       border-radius: 6px;
-      padding: 10px 24px;
+      padding: 9px 22px;
       font-family: inherit;
-      font-size: 1.05rem;
+      font-size: 0.98rem;
       font-weight: 800;
       cursor: pointer;
       box-shadow: 0 4px 0 #7f1d1d, 0 6px 15px rgba(0,0,0,0.2);
@@ -343,7 +365,7 @@
       border: 4px solid #991b1b;
       box-shadow: 0 0 0 3px #ca8a04;
       border-radius: 8px;
-      padding: 20px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
     }
@@ -353,12 +375,12 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid #991b1b;
-      padding-bottom: 10px;
-      margin-bottom: 14px;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
     }
 
     .catalog-title {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-weight: 800;
       color: #991b1b;
     }
@@ -366,9 +388,9 @@
     .catalog-grid {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
-      gap: 8px;
+      gap: 7px;
       overflow-y: auto;
-      padding: 8px 4px;
+      padding: 6px 4px;
       flex: 1;
     }
 
@@ -376,9 +398,9 @@
       background: #f4ede4;
       border: 1px solid #d97706;
       border-radius: 4px;
-      padding: 8px 0;
+      padding: 7px 0;
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
       cursor: pointer;
       color: #38251e;
@@ -393,7 +415,7 @@
       background: #78350f;
       color: #ffffff;
       border: none;
-      padding: 8px 18px;
+      padding: 6px 16px;
       font-family: inherit;
       border-radius: 4px;
       cursor: pointer;
@@ -410,23 +432,23 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 30px;
+      padding: 26px;
       z-index: 50;
     }
 
     .splash-title {
       font-family: 'Yuji Boku', serif;
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       color: #991b1b;
-      margin: 10px 0;
+      margin: 8px 0;
       letter-spacing: 4px;
       text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
     }
 
     .splash-subtitle {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: #78350f;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       font-weight: 700;
     }
 
@@ -435,9 +457,9 @@
       color: #ffffff;
       border: 3px solid #ca8a04;
       border-radius: 8px;
-      padding: 16px 40px;
+      padding: 14px 38px;
       font-family: inherit;
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-weight: 800;
       letter-spacing: 2px;
       cursor: pointer;
@@ -449,10 +471,11 @@
 
     @media (max-width: 720px) {
       .choices-grid { grid-template-columns: 1fr; }
-      .question-slate { font-size: 1.15rem; }
-      .choice-tile { font-size: 1rem; padding: 10px 14px; }
+      .shrine-illustration-box { height: 95px; }
+      .question-slate { font-size: 1.05rem; }
+      .choice-tile { font-size: 0.95rem; padding: 9px 12px; }
       .catalog-grid { grid-template-columns: repeat(5, 1fr); }
-      .splash-title { font-size: 2rem; }
+      .splash-title { font-size: 1.9rem; }
     }
   </style>
 </head>
@@ -482,6 +505,10 @@
     <main class="stage-content" id="game-stage">
       <div class="part-ribbon" id="part-tag">第 1 部：格助詞・副助詞</div>
       
+      <!-- Thematic Shrine Graphic Viewport -->
+      <div class="shrine-illustration-box" id="illustration-container"></div>
+
+      <!-- Question Slate -->
       <div class="question-slate" id="question-box">
         <span class="question-num" id="q-num">問1.</span>
         <span id="q-text">問題読み込み中...</span>
@@ -506,17 +533,17 @@
         <path d="M2,4 H22 V7 H20 V20 H17 V7 H7 V20 H4 V7 H2 Z M5,2 H19 V4 H5 Z"/>
       </svg>
       <h1 class="splash-title">JLPT N5 試練の社</h1>
-      <p class="splash-subtitle">全6部 75題 綜合全方位摸底特訓</p>
+      <p class="splash-subtitle">全6部 75題 綜合全方位摸底特訓（和風插畫版）</p>
       <div style="font-size: 0.95rem; color: #78350f; margin-bottom: 20px; line-height: 1.8;">
-        各大部按順序推進，各大部內部題目隨機排列。<br>
-        答錯可無限次重試直至答對，答對後展開完整深度文法解析！
+        六大部嚴格按順序推進，每部內部題目與選項隨機亂序。<br>
+        每道試題均配有專屬日系圖示。答錯可多次重試，答對後即展開深度語法詳解！
       </div>
       <button class="btn-start" onclick="startGame()">參拜・試練開始</button>
     </div>
 
     <!-- Finish Screen -->
     <div class="splash-screen" id="finish-screen" style="display:none;">
-      <div style="font-size: 4rem; margin-bottom: 6px;">🌸 大願成就 🌸</div>
+      <div style="font-size: 3.8rem; margin-bottom: 6px;">🌸 大願成就 🌸</div>
       <h1 class="splash-title" style="color: #065f46;">全七十五問 摸底圓滿達成！</h1>
       <p class="splash-subtitle" id="finish-summary"></p>
       <button class="btn-start" onclick="restartGame()">重新挑戰 🔄</button>
@@ -592,6 +619,85 @@
         }, i * 90);
       });
     }
+
+    /* 75 Custom Japanese Vignette SVG Graphics */
+    const graphicsCatalog = {
+      1: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="140" y="25" width="80" height="60" rx="6" fill="#1e3a8a"/><polygon points="180,15 150,25 210,25" fill="#172554"/><circle cx="180" cy="55" r="14" fill="#fed7aa"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【学生証・自己紹介】</text></svg>`,
+      2: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="110" y="20" width="140" height="70" rx="4" fill="#78350f"/><rect x="125" y="30" width="22" height="50" fill="#b91c1c"/><rect x="153" y="30" width="22" height="50" fill="#15803d"/><rect x="181" y="30" width="22" height="50" fill="#1d4ed8"/><rect x="209" y="30" width="22" height="50" fill="#ca8a04"/><text x="180" y="103" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【図書館で読書】</text></svg>`,
+      3: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="60" y="45" width="150" height="30" rx="15" fill="#f8fafc" stroke="#2563eb" stroke-width="3"/><rect x="250" y="25" width="40" height="50" fill="#991b1b"/><polygon points="270,10 240,25 300,25" fill="#78350f"/><text x="180" y="102" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【新幹線で京都へ】</text></svg>`,
+      4: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="30" width="45" height="45" rx="8" fill="#d97706"/><circle cx="195" cy="52" r="22" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/><circle cx="195" cy="52" r="11" fill="#f59e0b"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【朝食：パンと卵】</text></svg>`,
+      5: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="20" width="120" height="65" fill="#334155"/><rect x="140" y="35" width="20" height="20" fill="#fef08a"/><rect x="170" y="35" width="20" height="20" fill="#fef08a"/><rect x="200" y="35" width="20" height="20" fill="#fef08a"/><text x="180" y="102" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【日曜日にデパートで会う】</text></svg>`,
+      6: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="100" y="20" width="160" height="55" fill="#14532d" stroke="#78350f" stroke-width="3"/><circle cx="180" cy="45" r="12" fill="#fed7aa"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【教室に田中さんがいる】</text></svg>`,
+      7: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><path d="M140,55 Q180,95 220,55 Z" fill="#ffffff" stroke="#1c1917" stroke-width="2"/><circle cx="180" cy="50" r="24" fill="#ffffff"/><line x1="130" y1="30" x2="230" y2="40" stroke="#78350f" stroke-width="3"/><text x="180" y="102" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【箸でご飯を食べる】</text></svg>`,
+      8: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="140" cy="48" r="22" fill="#ffffff" stroke="#991b1b" stroke-width="3"/><line x1="140" y1="48" x2="140" y2="35" stroke="#000" stroke-width="2"/><line x1="140" y1="48" x2="130" y2="48" stroke="#000" stroke-width="2"/><circle cx="220" cy="48" r="22" fill="#ffffff" stroke="#991b1b" stroke-width="3"/><line x1="220" y1="48" x2="220" y2="35" stroke="#000" stroke-width="2"/><line x1="220" y1="48" x2="232" y2="48" stroke="#000" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【午前9時から午後3時まで】</text></svg>`,
+      9: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="130" y="30" width="100" height="50" rx="3" fill="#ffffff" stroke="#78350f" stroke-width="2"/><line x1="130" y1="30" x2="180" y2="55" stroke="#991b1b" stroke-width="2"/><line x1="230" y1="30" x2="180" y2="55" stroke="#991b1b" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【父と母に手紙】</text></svg>`,
+      10: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="30" width="55" height="45" fill="#3b82f6"/><line x1="195" y1="25" x2="215" y2="75" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【ノートやペンなど】</text></svg>`,
+      11: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="145" y="30" width="70" height="50" fill="#475569"/><polygon points="180,12 135,30 225,30" fill="#b91c1c"/><line x1="130" y1="20" x2="230" y2="85" stroke="#dc2626" stroke-width="4"/><text x="180" y="102" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【どこへも行きませんでした】</text></svg>`,
+      12: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="120" cy="50" r="18" fill="#dc2626"/><circle cx="160" cy="50" r="18" fill="#dc2626"/><circle cx="200" cy="50" r="18" fill="#dc2626"/><rect x="230" y="38" width="55" height="24" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/><text x="257" y="55" font-size="10" fill="#000" text-anchor="middle">500円</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【3つで500円】</text></svg>`,
+      13: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><polygon points="120,35 150,25 150,45" fill="#38bdf8"/><line x1="80" y1="65" x2="280" y2="65" stroke="#94a3b8" stroke-width="4"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【飛行機は新幹線より速い】</text></svg>`,
+      14: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="150" cy="50" r="16" fill="#fed7aa"/><text x="200" y="45" font-size="22" fill="#ca8a04">♪</text><text x="225" y="60" font-size="26" fill="#dc2626">♫</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【歌がとても上手】</text></svg>`,
+      15: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="25" width="70" height="50" rx="4" fill="#1e293b"/><polygon points="205,32 235,22 235,68 205,58" fill="#ca8a04"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【1か月に2回映画】</text></svg>`,
+      16: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="130" y="25" width="100" height="55" fill="#ffffff" stroke="#78350f" stroke-width="2"/><line x1="145" y1="45" x2="215" y2="45" stroke="#000" stroke-width="2"/><text x="180" y="102" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【お名前を書いてください】</text></svg>`,
+      17: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="32" width="90" height="45" rx="6" fill="#334155"/><circle cx="180" cy="54" r="14" fill="#ffffff"/><circle cx="180" cy="54" r="9" fill="#0284c7"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【写真を撮ってもいいですか】</text></svg>`,
+      18: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="45" r="25" fill="none" stroke="#dc2626" stroke-width="5"/><line x1="162" y1="27" x2="198" y2="63" stroke="#dc2626" stroke-width="5"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【タバコを吸ってはいけません】</text></svg>`,
+      19: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="30" width="80" height="50" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/><line x1="205" y1="20" x2="185" y2="60" stroke="#78350f" stroke-width="4"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【手紙を書いています】</text></svg>`,
+      20: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><path d="M120,30 H240 V38 H225 V75 H205 V38 H155 V75 H135 V38 H120 Z" fill="#991b1b"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【日本語を勉強しに来ました】</text></svg>`,
+      21: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><polygon points="155,30 205,30 195,75 165,75" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【冷たい水が飲みたい】</text></svg>`,
+      22: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="45" r="22" fill="#fed7aa"/><line x1="180" y1="35" x2="180" y2="55" stroke="#78350f" stroke-width="5" stroke-linecap="round"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【大きな声で話さないで】</text></svg>`,
+      23: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="48" r="22" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/><line x1="180" y1="48" x2="180" y2="35" stroke="#000" stroke-width="2"/><line x1="180" y1="48" x2="180" y2="60" stroke="#000" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【朝早く起きなければなりません】</text></svg>`,
+      24: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="30" width="120" height="40" fill="#ffffff" stroke="#000" stroke-width="2"/><rect x="135" y="30" width="10" height="25" fill="#000"/><rect x="155" y="30" width="10" height="25" fill="#000"/><rect x="185" y="30" width="10" height="25" fill="#000"/><rect x="205" y="30" width="10" height="25" fill="#000"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【ピアノを弾くことができます】</text></svg>`,
+      25: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><path d="M140,25 A20,20 0 0,0 160,65 A25,25 0 1,1 140,25 Z" fill="#facc15"/><rect x="190" y="30" width="45" height="45" rx="3" fill="#15803d"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【寝るまえに日記を書く】</text></svg>`,
+      26: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="45" width="120" height="15" fill="#b45309"/><ellipse cx="155" cy="42" rx="16" ry="6" fill="#ef4444"/><ellipse cx="195" cy="42" rx="16" ry="6" fill="#f97316"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【刺身を食べたことがある】</text></svg>`,
+      27: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><line x1="145" y1="25" x2="135" y2="65" stroke="#78350f" stroke-width="4"/><rect x="185" y="30" width="45" height="45" rx="4" fill="#38bdf8"/><circle cx="207" cy="52" r="12" fill="#ffffff"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【掃除したり洗濯したり】</text></svg>`,
+      28: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="25" width="90" height="50" fill="#e2e8f0" stroke="#78350f" stroke-width="3"/><line x1="180" y1="25" x2="180" y2="75" stroke="#78350f" stroke-width="3"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【窓が開いています】</text></svg>`,
+      29: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="155" cy="45" r="14" fill="#fed7aa"/><circle cx="205" cy="45" r="14" fill="#fed7aa"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【一緒に京都へ行きませんか】</text></svg>`,
+      30: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="130" y="38" width="100" height="35" rx="6" fill="#15803d"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【ロビーで休みましょう】</text></svg>`,
+      31: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="140" y="20" width="80" height="60" fill="#ffffff" stroke="#78350f" stroke-width="2"/><text x="180" y="55" font-size="24" fill="#dc2626" text-anchor="middle">？</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【テストは難しかった】</text></svg>`,
+      32: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="145" y="25" width="70" height="50" fill="#fef08a" stroke="#78350f" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【あまり広くない】</text></svg>`,
+      33: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="130" y="25" width="100" height="50" fill="#ecfdf5" stroke="#059669" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【静かで、きれい】</text></svg>`,
+      34: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="155" y="15" width="50" height="65" fill="#475569"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【高い建物】</text></svg>`,
+      35: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="40" r="15" fill="#fed7aa"/><path d="M180,60 C165,45 155,55 180,75 C205,55 195,45 180,60 Z" fill="#ec4899"/><text x="180" y="102" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【親切な人】</text></svg>`,
+      36: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="25" width="90" height="50" rx="3" fill="#cbd5e1"/><line x1="145" y1="40" x2="215" y2="40" stroke="#b91c1c" stroke-width="2"/><line x1="145" y1="55" x2="200" y2="55" stroke="#b91c1c" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【全然暇じゃありませんでした】</text></svg>`,
+      37: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="150" cy="48" r="16" fill="#fca5a5"/><circle cx="210" cy="48" r="16" fill="#86efac"/><text x="180" y="54" font-size="18" fill="#ca8a04">➜</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【病気がよくなりました】</text></svg>`,
+      38: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><text x="150" y="55" font-size="28" fill="#facc15">✨</text><text x="195" y="55" font-size="28" fill="#facc15">✨</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【部屋をきれいにしてください】</text></svg>`,
+      39: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="150" cy="45" r="18" fill="#fb923c"/><text x="210" y="52" font-size="14" fill="#059669">￥安</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【おいしくて、安い】</text></svg>`,
+      40: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><ellipse cx="180" cy="50" rx="35" ry="12" fill="#f59e0b"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【あまりおいしくありません】</text></svg>`,
+      41: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><polygon points="180,18 130,75 230,75" fill="#3b82f6"/><polygon points="180,18 160,42 170,40 180,45 190,40 200,42" fill="#ffffff"/><circle cx="130" cy="30" r="12" fill="#dc2626"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【一番高い山：富士山】</text></svg>`,
+      42: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="40" width="90" height="28" rx="6" fill="#ffffff" stroke="#000" stroke-width="2"/><circle cx="155" cy="70" r="8" fill="#000"/><circle cx="205" cy="70" r="8" fill="#000"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【白い車】</text></svg>`,
+      43: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="140" cy="48" r="16" fill="#dc2626"/><circle cx="180" cy="48" r="16" fill="#dc2626"/><circle cx="220" cy="48" r="16" fill="#dc2626"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【りんごが3つ】</text></svg>`,
+      44: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="120" y="32" width="22" height="28" fill="#fbcfe8" stroke="#db2777" stroke-width="1.5"/><rect x="150" y="32" width="22" height="28" fill="#fbcfe8" stroke="#db2777" stroke-width="1.5"/><rect x="180" y="32" width="22" height="28" fill="#fbcfe8" stroke="#db2777" stroke-width="1.5"/><rect x="210" y="32" width="22" height="28" fill="#fbcfe8" stroke="#db2777" stroke-width="1.5"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【切手を5枚】</text></svg>`,
+      45: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><line x1="165" y1="25" x2="165" y2="70" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/><line x1="195" y1="25" x2="195" y2="70" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【ボールペンが2本】</text></svg>`,
+      46: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="140" y="38" width="80" height="26" rx="4" fill="#ffffff" stroke="#000" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【車が1台】</text></svg>`,
+      47: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><path d="M150,55 A30,30 0 0,1 210,55 Z" fill="#38bdf8"/><line x1="180" y1="55" x2="180" y2="75" stroke="#78350f" stroke-width="3"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【だれの傘？】</text></svg>`,
+      48: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><ellipse cx="145" cy="50" rx="8" ry="12" fill="#78350f"/><ellipse cx="175" cy="40" rx="8" ry="12" fill="#78350f"/><ellipse cx="205" cy="50" rx="8" ry="12" fill="#78350f"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【どうやって？歩いて】</text></svg>`,
+      49: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="45" r="22" fill="#fbcfe8"/><text x="180" y="52" font-size="20" fill="#991b1b" text-anchor="middle">楽</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【日本の生活はどうですか】</text></svg>`,
+      50: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="145" y="30" width="70" height="45" fill="#78350f"/><polygon points="180,15 135,30 225,30" fill="#1c1917"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【どんな町：古い町】</text></svg>`,
+      51: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="150" cy="45" r="10" fill="#475569"/><circle cx="180" cy="45" r="10" fill="#475569"/><circle cx="210" cy="45" r="10" fill="#475569"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【学生が何人？10人】</text></svg>`,
+      52: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><polygon points="175,25 185,25 190,65 180,75 170,65" fill="#1e3a8a"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【ネクタイはいくら？】</text></svg>`,
+      53: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="48" r="22" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/><text x="180" y="55" font-size="16" fill="#15803d" text-anchor="middle">済</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【宿題はもう終わりましたか】</text></svg>`,
+      54: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="48" r="22" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/><line x1="168" y1="36" x2="192" y2="60" stroke="#dc2626" stroke-width="4"/><line x1="192" y1="36" x2="168" y2="60" stroke="#dc2626" stroke-width="4"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【まだ終わっていません】</text></svg>`,
+      55: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="48" r="18" fill="#d97706"/><line x1="170" y1="40" x2="190" y2="56" stroke="#fef08a" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【納豆があまり好きじゃない】</text></svg>`,
+      56: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="32" width="30" height="40" fill="#1e3a8a"/><rect x="165" y="32" width="30" height="40" fill="#ffffff"/><rect x="195" y="32" width="30" height="40" fill="#dc2626"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【フランス語がぜんぜん分からない】</text></svg>`,
+      57: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><line x1="150" y1="30" x2="140" y2="60" stroke="#38bdf8" stroke-width="3"/><line x1="180" y1="25" x2="170" y2="55" stroke="#38bdf8" stroke-width="3"/><line x1="210" y1="30" x2="200" y2="60" stroke="#38bdf8" stroke-width="3"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【雨でした。だから出かけない】</text></svg>`,
+      58: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="140" y="35" width="80" height="40" rx="4" fill="#1e293b"/><circle cx="180" cy="55" r="12" fill="#ca8a04"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【とてもいい。でも高い】</text></svg>`,
+      59: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="150" cy="48" r="18" fill="#ffffff" stroke="#b91c1c" stroke-width="2"/><text x="210" y="55" font-size="22" fill="#f97316">👟</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【6時に起きる。それからジョギング】</text></svg>`,
+      60: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="160" y="35" width="35" height="40" rx="4" fill="#78350f"/><path d="M195,45 C205,45 205,60 195,60" fill="none" stroke="#78350f" stroke-width="3"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【毎朝いつもコーヒー】</text></svg>`,
+      61: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="50" r="24" fill="#ffffff" stroke="#78350f" stroke-width="2"/><circle cx="180" cy="50" r="15" fill="#fde68a"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【たくさん食べたい】</text></svg>`,
+      62: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="140" y="42" width="80" height="25" rx="3" fill="#15803d"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【ちょっと休みましょう】</text></svg>`,
+      63: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="48" r="22" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/><line x1="180" y1="48" x2="180" y2="35" stroke="#000" stroke-width="2"/><line x1="180" y1="48" x2="192" y2="48" stroke="#000" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【6時半におきます】</text></svg>`,
+      64: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="48" r="20" fill="#ffffff" stroke="#78350f" stroke-width="2"/><line x1="150" y1="35" x2="150" y2="65" stroke="#ca8a04" stroke-width="3"/><line x1="210" y1="35" x2="210" y2="65" stroke="#ca8a04" stroke-width="3"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【カフェで食事】</text></svg>`,
+      65: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="150" y="25" width="60" height="55" fill="#78350f"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【いってらっしゃい】</text></svg>`,
+      66: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><polygon points="170,30 180,65 190,30" fill="#fed7aa"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【食べるまえにいただきます】</text></svg>`,
+      67: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="140" y="30" width="80" height="45" fill="#ffffff" stroke="#000" stroke-width="1.5"/><line x1="150" y1="42" x2="210" y2="42" stroke="#475569" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【駅で新聞を買います】</text></svg>`,
+      68: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="180" cy="30" r="14" fill="#94a3b8"/><line x1="170" y1="45" x2="165" y2="70" stroke="#38bdf8" stroke-width="2"/><line x1="180" y1="45" x2="180" y2="70" stroke="#38bdf8" stroke-width="2"/><line x1="190" y1="45" x2="195" y2="70" stroke="#38bdf8" stroke-width="2"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【シャワーをあびます】</text></svg>`,
+      69: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="145" y="42" width="30" height="15" rx="7" fill="#ef4444"/><rect x="185" y="42" width="30" height="15" rx="7" fill="#3b82f6"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【薬をのみました】</text></svg>`,
+      70: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><path d="M150,30 L210,30 L220,75 L140,75 Z" fill="#b45309"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【厚いコートを着て】</text></svg>`,
+      71: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><circle cx="155" cy="50" r="16" fill="none" stroke="#000" stroke-width="4"/><circle cx="205" cy="50" r="16" fill="none" stroke="#000" stroke-width="4"/><line x1="171" y1="50" x2="189" y2="50" stroke="#000" stroke-width="4"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【眼鏡をかけています】</text></svg>`,
+      72: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><ellipse cx="155" cy="50" rx="14" ry="20" fill="#78350f"/><ellipse cx="205" cy="50" rx="14" ry="20" fill="#78350f"/><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【靴を脱いでください】</text></svg>`,
+      73: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="145" y="32" width="70" height="35" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/><text x="180" y="54" font-size="11" fill="#000" text-anchor="middle">切符</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【電車に乗るとき】</text></svg>`,
+      74: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="20" width="90" height="60" fill="#ffffff" stroke="#991b1b" stroke-width="2"/><text x="180" y="58" font-family="'Yuji Boku', serif" font-size="32" fill="#1c1917" text-anchor="middle">今日</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【漢字読み：きょう】</text></svg>`,
+      75: `<svg viewBox="0 0 360 110"><rect width="360" height="110" fill="#fef3c7"/><rect x="135" y="20" width="90" height="60" fill="#ffffff" stroke="#991b1b" stroke-width="2"/><text x="180" y="58" font-family="'Yuji Boku', serif" font-size="32" fill="#1c1917" text-anchor="middle">外国</text><text x="180" y="100" font-family="'Shippori Mincho', serif" font-size="12" fill="#78350f" text-anchor="middle">【漢字読み：がいこく】</text></svg>`
+    };
 
     /* 6 Designated Parts Question Dataset */
     const rawParts = [
@@ -1094,7 +1200,7 @@
             q: "日本では ご飯を 食べる （  ）に「いただきます」と 言います。",
             options: ["まえ", "あと", "とき", "ころ"],
             correct: "まえ",
-            exp: "日本人在「開飯之前」雙手合十說 「いただきます」；食飽之後說「ごちそうさまでした」。"
+            exp: "日本人在「開飯之前」雙手合十說 「いただきます」；食飽之後說「ごちそうさ反でした」。"
           },
           {
             id: 67,
@@ -1173,7 +1279,7 @@
       return copy;
     }
 
-    // Build the 75-question quiz queue: Parts in order 1->2->3->4->5->6, questions within each part shuffled!
+    // Build the 75-question quiz queue: Parts strictly in order 1->2->3->4->5->6; questions & options randomized within each part!
     let activeQuestions = [];
     let currentIndex = 0;
     let firstTryCorrectCount = 0;
@@ -1186,7 +1292,7 @@
         const shuffledPartQuestions = shuffleArray(part.questions).map(item => ({
           ...item,
           partName: part.partName,
-          // Shuffle options so choice 1 isn't always the answer!
+          graphicSVG: graphicsCatalog[item.id],
           shuffledOptions: shuffleArray(item.options)
         }));
         activeQuestions.push(...shuffledPartQuestions);
@@ -1207,6 +1313,7 @@
       document.getElementById("hud-progress").textContent = `第 ${currentIndex + 1} / 75 題`;
       document.getElementById("hud-score").textContent = `初手正解: ${firstTryCorrectCount}`;
       document.getElementById("part-tag").textContent = q.partName;
+      document.getElementById("illustration-container").innerHTML = q.graphicSVG;
       document.getElementById("q-num").textContent = `原問${q.id}.`;
       document.getElementById("q-text").textContent = q.q;
       
